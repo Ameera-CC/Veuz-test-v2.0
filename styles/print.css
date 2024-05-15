@@ -1,0 +1,25 @@
+/* Set the page size to A5 */
+@page {
+    size: A5 portrait; /* Adjust 'portrait' or 'landscape' based on the selected orientation */
+    margin: 0; /* Set margins to 0 to maximize printable area */
+}
+
+/* Adjust body styles for printing */
+body {
+    margin: 0; /* Reset default body margin */
+    padding: 0; /* Reset default body padding */
+}
+
+/* Ensure the content fits within the A5 page */
+.preview-page {
+    width: 148mm; /* Set width to match A5 paper width */
+    height: 210mm; /* Set height to match A5 paper height */
+    margin: 0; /* Set margin to 0 to maximize printable area */
+    padding: 0;
+}
+
+.preview-area{
+    margin: 0; /* Set margin to 0 to maximize printable area */
+    padding: 0;
+
+}
