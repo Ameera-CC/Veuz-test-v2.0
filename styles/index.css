@@ -81,7 +81,7 @@ div ul{
 }
 
 .preview-page div{
-    margin: 10px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -92,9 +92,9 @@ div ul{
 }
 
 .preview-page :not(:first-child) {
-    margin: 10px;
-    padding: 5px 20px;
-    width: 200px; 
+    /* margin: 10px;  */
+     padding: 5px 20px;
+    /* width: 200px;  */
     text-align: center;
     border: 1px solid rgba(14, 13, 13, 0.14);
 

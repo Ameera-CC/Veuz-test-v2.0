@@ -221,13 +221,32 @@ function rotateNameElement() {
 }
 
 $(document).ready(function(){
+   
     $(".drag").draggable({
-        containment: "#previewPage",
-        opacity : 0.5
-
+        opacity: 0.5,
+        containment: "#previewPage"
     });
-    
+
+    $(".profile-input").droppable({
+        drop: function(event, ui) {
+            // Revert the draggable back to its original position
+            ui.draggable.animate({
+                top: 0,
+                left: 0
+            });  
+            alert("Cannot drop, target element is not empty or draggable element position mismatch.");
+
+        }
+    });
+
+
+
 });
+
+
+
+
+
 
 
 function printPreview() {
